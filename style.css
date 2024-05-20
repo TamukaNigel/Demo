@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", sans-serif;
+    padding: 50px 150px 150px;
+    background-color: white;
+}
+p {
+    font-size: 14px;
+    color: hsl(236, 13%, 42%);
+}
+h1 {
+    font-weight: 800;
+    font-size: 55px;
+    color: black;
+    max-width: 49.999999%;
+    float: left;
+    padding-right: 10px;
+    padding-top: 0%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.divintopsec {
+    max-width: 50%;
+    float: right;
+    padding-left: 70px;
+    margin-top: 10px;
+}
+a button {
+    padding: 15px 30px;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    text-decoration: none;
+    border: none;
+    letter-spacing: 4px;
+    font-weight: 750;
+    font-size: 12px;
+    margin-top: 20px;
+}
+a button:hover {
+    cursor: pointer;
+    background-color: hsl(240, 100%, 5%);
+}
+h2 {
+    font-weight: 700;
+    font-size: 40px;
+    color: hsl(35, 77%, 62%);
+}
+h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+h3:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+h4 {
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0px 0px 10px;
+    margin: 0%;
+    color: hsl(233, 8%, 79%);
+}
+h5 {
+    font-weight: 700;
+    font-size: 17px;
+    padding: 5px 0px;
+    margin: 0%;
+    color: black;
+}
+h5:hover {
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+.divinbottomsec {
+    width: 65%;
+    padding: 0 0 0 20px;
+    margin: 0%;
+}
+.divimg {
+    width: 35%;
+    background-image: url("./assets/images/image-retro-pcs.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.divimg2 {
+    width: 35%;
+    background-image: url("./assets/images/image-top-laptops.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.divimg3 {
+    width: 35%;
+    background-image: url("./assets/images/image-gaming-growth.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    margin: 0px 0px 50px 0px;
+}
+nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: hsl(236, 13%, 42%);
+    text-align: center;
+    cursor: pointer;
+}
+nav .links:hover, nav .links:active {
+    color: hsl(5, 85%, 63%);
+}
+.navmobilemenu {
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: none;
+    display: none;
+}
+hr {
+    border: 1px solid white;
+}
+.topsection {
+    margin: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bottomsection {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.in1 {
+    flex-basis: 33.33333333%;
+    padding-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.in3 {
+    flex-basis: 33.33333333%;
+    padding-right: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+main {
+    flex-basis: 72%;
+    padding-right: 25px;
+
+}
+aside {
+    flex-basis: 28%;
+    background-color: hsl(240, 100%, 5%);
+    padding: 20px;
+}
+
+/* 1080px and down */
+@media only screen and (max-width: 1080px) {
+    .in1, .in3 {
+        flex-basis: 50%;
+        padding-top: 30px;
+    }
+    .divintopsec {
+        padding: 0 150px 0 0;
+        max-width: 100%;
+    }
+    h1 {
+        font-size: 45px;
+        max-width: 100%;
+        padding: 0 150px 0 0;
+    }
+    body {
+        padding: 50px 75px 75px;
+    }
+}
+/* 760px and down */
+@media only screen and (max-width: 760px) {
+
+    .in1,
+    .in3 {
+        flex-basis: 100%;
+        padding: 30px 0;
+        margin: 0%;
+    }
+
+    .divintopsec {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 45px;
+        max-width: 100%;
+        padding: 0;
+    }
+    h2 {
+        padding: 0%;
+        margin: 0%;
+    }
+    body {
+        padding: 50px 30px 30px;
+    }
+    main {
+        flex-basis: 100%;
+    }
+    aside {
+        flex-basis: 100%;
+        margin-top: 50px;
+        padding: 20px 30px;
+    }
+    .topsection, main {
+        margin: 0%;
+        padding: 0%;
+    }
+    #mymenu {
+            display: none;
+            flex-direction: row;
+        }
+    
+    .navmobilemenu {
+            display: inline-block;
+        }
+}
+/* 375px and down */
+@media only screen and (max-width: 375px){
+    body {
+        padding: 20px;
+    }
+    header {
+        margin: 0 0 10px;
+    }
+    
+}
